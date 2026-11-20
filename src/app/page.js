@@ -1,10 +1,13 @@
+export const dynamic = "force-dynamic";
+
+const appName = process.env.APP_NAME || "DevOps & Cloud Practice";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white flex items-center justify-center px-6">
       <div className="max-w-3xl text-center">
         <p className="text-cyan-400 font-semibold tracking-widest uppercase mb-4">
-          DevOps & Cloud Practice
+          {appName}
         </p>
 
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
